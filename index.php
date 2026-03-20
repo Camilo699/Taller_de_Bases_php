@@ -20,7 +20,7 @@
         </thead>
         <tbody>
             <?php
-            // La consulta debe terminar en ;
+            // La consultas
             $stmt = $pdo->query("SELECT nombre, precio, stock FROM productos");
             
             while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
